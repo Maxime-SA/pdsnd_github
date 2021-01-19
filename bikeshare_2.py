@@ -219,6 +219,7 @@ def display_raw_data(df):
 
 
 def main():
+    """The following function will call all of the above functions as well as allow the user to see the raw data five rows at a time."""
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
