@@ -17,7 +17,7 @@ my_hours = {'0' : '12 AM', '1' : '1 AM',  '2' : '2 AM', '3' : '3 AM', '4' : '4 A
 
 def get_filters():
     """
-    Asks user to specify a city, month, and day to analyze.
+    Asks user to specify a city, month, and day to analyze. The user is also allowed to view the data as a whole by not selecting any filters for the month and day.
 
     Returns:
         (str) city - name of the city to analyze
