@@ -208,13 +208,13 @@ def user_stats(df):
 def display_raw_data(df):
     """Will display the raw data 5 rows at a time"""
 
-    raw_data_input = input('Would you like to see the first five rows of the raw data? Just type in yes or no!\n')
+    user_raw_data_input = input('Would you like to see the first five rows of the raw data? Just type in yes or no!\n')
     i = 0
 
-    while raw_data_input == 'yes':
+    while user_raw_data_input == 'yes':
         print()
         print(df.iloc[i:(i+5),:])
-        raw_data_input = input('\nWould you like to see the next five rows of the raw data? Just type in yes or no!\n')
+        user_raw_data_input = input('\nWould you like to see the next five rows of the raw data? Just type in yes or no!\n')
         i +=5
 
 
@@ -236,7 +236,7 @@ def main():
         print()
         display_raw_data(df)
 
-        restart = input('\nWould you like to restart? Enter yes or no.\n')
+        restart = input('\nWould you like to restart the process by reviewing your filters? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
 
